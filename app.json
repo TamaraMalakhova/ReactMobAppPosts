@@ -1,13 +1,18 @@
 {
   "expo": {
-    "name": "React native Self Posts App",
+    "name": "Self Blog",
     "slug": "rn-self-posts",
+    "privacy": "public",
     "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -17,7 +22,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tamaradev.self-blog-rn-app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.tamaradev.self_blog_rn_app",
+      "versionCode": 1,
+      "permissions": ["CAMERA", "WRITE_EXTERNAL_STORAGE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
