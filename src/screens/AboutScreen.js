@@ -14,7 +14,7 @@ export const AboutScreen = ({}) => {
 
 AboutScreen.navigationOptions = ({ navigation }) => ({
     headerTitle: 'About app',
-    headerLeft: (
+    headerLeft: () => (
         <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
             <Item
                 title='Toggle Drawer'
@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     version: {
-        /* fontFamily: 'open-bold', */
-        fontWeight: 'bold'
+        fontFamily: 'open-bold'
     }
 })
